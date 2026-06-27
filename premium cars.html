@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Premium Luxury Cars</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    header nav a {
+    color: rgb(49, 28, 231);
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: hsl(0, 14%, 95%);
+}
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#020617;
+      color:white;
+    }
+
+    .cars-section{
+      padding:90px 8%;
+      background:
+      radial-gradient(circle at top right,#dcdfe4,#eff0f3 60%);
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:70px;
+    }
+
+    .section-title h1{
+      font-size:58px;
+      margin-bottom:15px;
+      color:#ffffff;
+    }
+
+    .section-title p{
+      color:#94a3b8;
+      font-size:18px;
+      max-width:700px;
+      margin:auto;
+      line-height:1.7;
+    }
+
+    .cars-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+      gap:35px;
+    }
+
+    .car-card{
+      background:#0f172a;
+      border-radius:28px;
+      overflow:hidden;
+      transition:0.5s;
+      border:1px solid rgba(255,255,255,0.08);
+      position:relative;
+    }
+
+    .car-card:hover{
+      transform:translateY(-12px);
+      box-shadow:0 20px 50px rgba(0,0,0,0.6);
+    }
+
+    .car-image{
+      position:relative;
+      overflow:hidden;
+    }
+
+    .car-image img{
+      width:100%;
+      height:250px;
+      object-fit:cover;
+      transition:0.6s;
+    }
+
+    .car-card:hover .car-image img{
+      transform:scale(1.08);
+    }
+
+    .car-badge{
+      position:absolute;
+      top:20px;
+      left:20px;
+      background:#facc15;
+      color:black;
+      padding:8px 20px;
+      border-radius:30px;
+      font-size:14px;
+      font-weight:600;
+    }
+
+    .car-content{
+      padding:30px;
+    }
+
+    .car-name{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-bottom:15px;
+    }
+
+    .car-name h2{
+      font-size:30px;
+    }
+
+    .rating{
+      color:#facc15;
+      font-size:15px;
+    }
+
+    .price{
+      font-size:32px;
+      color:#facc15;
+      font-weight:700;
+      margin-bottom:22px;
+    }
+
+    .specs{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:15px;
+      margin-bottom:25px;
+    }
+
+    .spec-box{
+      background:#111827;
+      padding:15px;
+      border-radius:16px;
+      text-align:center;
+    }
+
+    .spec-box h4{
+      color:#facc15;
+      margin-bottom:8px;
+      font-size:15px;
+    }
+
+    .spec-box p{
+      color:#cbd5e1;
+      font-size:14px;
+    }
+
+    .description{
+      color:#94a3b8;
+      line-height:1.8;
+      margin-bottom:30px;
+      font-size:15px;
+    }
+
+    .buttons{
+      display:flex;
+      gap:15px;
+    }
+
+    .btn{
+      flex:1;
+      text-align:center;
+      text-decoration:none;
+      padding:14px;
+      border-radius:50px;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn-primary{
+      background:#facc15;
+      color:black;
+    }
+
+    .btn-primary:hover{
+      background:white;
+    }
+
+    .btn-outline{
+      border:1px solid #334155;
+      color:white;
+    }
+
+    .btn-outline:hover{
+      background:#1e293b;
+    }
+
+    @media(max-width:768px){
+
+      .section-title h1{
+        font-size:40px;
+      }
+
+      .cars-grid{
+        grid-template-columns:1fr;
+      }
+
+      .buttons{
+        flex-direction:column;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<section class="cars-section">
+   <nav>
+        <a href="q.html">Home</a>
+    </nav>
+
+
+  <div class="section-title">
+    <h1>Premium Luxury Cars</h1>
+    
+    <p>
+      Discover elite supercars and luxury vehicles designed with
+      performance, technology, elegance, and ultimate driving comfort.
+    </p>
+  </div>
+
+  <div class="cars-grid">
+
+    <!-- CAR 1 -->
+
+    <div class="car-card">
+
+      <div class="car-image">
+        <img src="LMK.jpg" alt="Lamborghini">
+        <div class="car-badge">Supercar</div>
+      </div>
+
+      <div class="car-content">
+
+        <div class="car-name">
+          <h2>Lamborghini Huracán</h2>
+          <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="price">$320,000</div>
+
+        <div class="specs">
+
+          <div class="spec-box">
+            <h4>Engine</h4>
+            <p>5.2L V10</p>
+          </div>
+
+          <div class="spec-box">
+            <h4>Top Speed</h4>
+            <p>325 km/h</p>
+          </div>
+
+          <div class="spec-box">
+            <h4>0-100</h4>
+            <p>2.9 sec</p>
+          </div>
+
+          <div class="spec-box">
+            <h4>Transmission</h4>
+            <p>Automatic</p>
+          </div>
+
+        </div>
+
+        <p class="description">
+          Italian engineering masterpiece with aggressive styling,
+          roaring V10 performance, and luxurious handcrafted interiors.
+        </p>
+
+        <div class="buttons">
+          <a href="#" class="btn btn-primary">View Details</a>
+          <a href="#" class="btn btn-outline">Book Test Drive</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CAR 2 -->
+
+    <div class="car-card">
+
+      <div class="car-image">
+        <img src="ferrari.webp" alt="Ferrari">
+        <div class="car-badge">Luxury</div>
+      </div>
+
+      <div class="car-content">
+
+        <div class="car-name">
+          <h2>Ferrari SF90</h2>
+          <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="price">$410,000</div>
+
+        <div class="specs">
+
+          <div class="spec-box">
+            <h4>Engine</h4>
+            <p>4.0L Twin Turbo</p>
+          </div>
+
+          <div class="spec-box">
+            <h4>Horsepower</h4>
+            <p>986 HP</p>
+          </div>
+
+          <div class="spec-box">
+            <h4>0-100</h4>
+            <p>2.5 sec</p>
+          </div>
+
+          <div class="spec-box">
+            <h4>Drive</h4>
+            <p>AWD</p>
+          </div>
+
+        </div>
+
+        <p class="description">
+          Futuristic Ferrari hybrid hypercar with extreme performance,
+          advanced aerodynamics, and iconic Italian luxury design.
+        </p>
+
+        <div class="buttons">
+          <a href="#" class="btn btn-primary">View Details</a>
+          <a href="#" class="btn btn-outline">Book Test Drive</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CAR 3 -->
+
+    <div class="car-card">
+
+      <div class="car-image">
+        <img src="phantom.webp" alt="Rolls Royce">
+        <div class="car-badge">Ultra Premium</div>
+      </div>
+
+      <div class="car-content">
+
+        <div class="car-name">
+          <h2>Rolls Royce Ghost</h2>
+          <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="price">$450,000</div>
+
+        <div class="specs">
+
+          <div class="spec-box">
+            <h4>Engine</h4>
+            <p>6.75L V12</p>
+          </div>
+
+          <div class="spec-box">
+            <h4>Luxury</h4>
+            <p>Executive</p>
+          </div>
+
+          <div class="spec-box">
+            <h4>Interior</h4>
+            <p>Leather</p>
+          </div>
+
+          <div class="spec-box">
+            <h4>Comfort</h4>
+            <p>Premium</p>
+          </div>
+
+        </div>
+
+        <p class="description">
+          World-class luxury sedan offering whisper-quiet comfort,
+          handcrafted interiors, and prestigious road presence.
+        </p>
+
+        <div class="buttons">
+          <a href="#" class="btn btn-primary">View Details</a>
+          <a href="#" class="btn btn-outline">Book Test Drive</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CAR 4 -->
+
+    <div class="car-card">
+
+      <div class="car-image">
+        <img src="r8.jpg" alt="Audi">
+        <div class="car-badge">Sport</div>
+      </div>
+
+      <div class="car-content">
+
+        <div class="car-name">
+          <h2>Audi R8</h2>
+          <div class="rating">★★★★★</div>
+        </div>
+
+        <div class="price">$210,000</div>
+
+        <div class="specs">
+
+          <div class="spec-box">
+            <h4>Engine</h4>
+            <p>5.2L V10</p>
+          </div>
+
+          <div class="spec-box">
+            <h4>Top Speed</h4>
+            <p>331 km/h</p>
+          </div>
+
+          <div class="spec-box">
+            <h4>Seats</h4>
+            <p>2 Seats</p>
+          </div>
+
+          <div class="spec-box">
+            <h4>Drive</h4>
+            <p>Quattro AWD</p>
+          </div>
+
+        </div>
+
+        <p class="description">
+          A perfect balance between luxury and track-ready performance
+          with iconic Audi technology and precision handling.
+        </p>
+
+        <div class="buttons">
+          <a href="#" class="btn btn-primary">View Details</a>
+          <a href="#" class="btn btn-outline">Book Test Drive</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    
+
+  </div>
+
+</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sports Cars Gallery</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background: #0f0f0f;
+        color: white;
+    }
+
+    header {
+        text-align: center;
+        padding: 20px;
+        background: #111;
+        border-bottom: 2px solid #ff0000;
+    }
+
+    h1 {
+        color: #ff0000;
+        margin: 0;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .card {
+        background: #1a1a1a;
+        width: 300px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(255,0,0,0.3);
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .card-content {
+        padding: 15px;
+    }
+
+    .car-name {
+        font-size: 20px;
+        color: #ff4444;
+        margin-bottom: 8px;
+    }
+
+    .details {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #ccc;
+    }
+
+    .specs {
+        margin-top: 10px;
+        font-size: 13px;
+        color: #aaa;
+    }
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Sports Cars Collection</h1>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <img src="dodge.jpg"alt="dodge">
+        <div class="card-content">
+            <div class="car-name">dodge</div>
+            <div class="details">
+                A powerful Italian supercar known for its speed and aggressive design.
+            </div>
+            <div class="specs">
+                Top Speed: 325 km/h <br>
+                Engine: V10
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="bmw x5.jpg" alt="bmw x5">
+        <div class="card-content">
+            <div class="car-name">bmw x5</div>
+            <div class="details">
+                A luxury sports car offering incredible performance and sharp handling.
+            </div>
+            <div class="specs">
+                Top Speed: 330 km/h <br>
+                Engine: V8 Twin Turbo
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="911turbo.jpeg" alt="Porsche">
+        <div class="card-content">
+            <div class="car-name">Porsche 911 Turbo</div>
+            <div class="details">
+                A legendary sports car combining daily usability with track performance.
+            </div>
+            <div class="specs">
+                Top Speed: 320 km/h <br>
+                Engine: Flat-6 Turbo
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="mf80.jpg" alt="McLaren">
+        <div class="card-content">
+            <div class="car-name">McLaren 720S</div>
+            <div class="details">
+                A lightweight hypercar with extreme acceleration and aerodynamic design.
+            </div>
+            <div class="specs">
+                Top Speed: 341 km/h <br>
+                Engine: V8 Twin Turbo
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>
+
+
+</body>
+</html>
+

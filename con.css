@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+header nav a {
+    color: rgb(22, 20, 20);
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: hsl(0, 95%, 48%);
+}
+/* Body */
+body {
+    background: #f4f6f9;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #1e2a38;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+/* Layout */
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Cards */
+.contact-info,
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+.contact-info h2,
+.contact-form h2 {
+    margin-bottom: 15px;
+    color: #1e2a38;
+}
+
+/* Contact Info Text */
+.contact-info p {
+    margin: 10px 0;
+    color: #555;
+}
+
+/* Form Inputs */
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Focus Effect */
+form input:focus,
+form textarea:focus {
+    border-color: #ff6b00;
+    box-shadow: 0 0 5px rgba(255, 107, 0, 0.3);
+}
+
+/* Button */
+form button {
+    background: #ff6b00;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Button Hover */
+form button:hover {
+    background: #e65c00;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1e2a38;
+    color: #fff;
+    margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}

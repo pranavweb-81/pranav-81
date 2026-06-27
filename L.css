@@ -1,0 +1,167 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #0b0b0b;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #d4af37; /* gold */
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #d4af37;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 100vh;
+  background: url('car.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin-bottom: 30px;
+  color: #ccc;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: #d4af37;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #fff;
+}
+
+/* CAR SECTION */
+.cars {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.cars h2 {
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.car-card {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.car-card:hover {
+  transform: translateY(-10px);
+}
+
+.car-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.car-card h3 {
+  margin: 15px 0;
+}
+
+.price {
+  color: #d4af37;
+  font-weight: bold;
+}
+
+/* BOOKING SECTION */
+.booking {
+  padding: 80px 60px;
+  background: #111;
+}
+
+.booking form {
+  display: grid;
+  gap: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.booking input,
+.booking select {
+  padding: 12px;
+  border: none;
+  outline: none;
+  background: #222;
+  color: #fff;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #000;
+  color: #aaa;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  .hero {
+    padding: 20px;
+  }
+
+  .hero h2 {
+    font-size: 40px;
+  }
+}

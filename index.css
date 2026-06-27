@@ -1,0 +1,610 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+}
+
+header nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #f39c12;
+}
+
+/* Hero Section */
+.hero {
+    height: 90vh;
+    background: url('https://images.unsplash.com/photo-1502877338535-766e1452684a') no-repeat center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h2 {
+    font-size: 50px;
+}
+
+.hero p {
+    margin: 10px 0;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: #f39c12;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background: #e67e22;
+}
+
+/* Services */
+.services {
+    padding: 50px;
+    text-align: center;
+}
+
+.service-box {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    background: rgb(15, 15, 15);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.service-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+.about {
+    padding: 60px 50px;
+    background: #fff;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Image */
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+/* Content */
+.about-content {
+    max-width: 600px;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-content button {
+    padding: 10px 20px;
+    background: #f39c12;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.about-content button:hover {
+    background: #e67e22;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+    }
+
+    body {
+        line-height: 1.6;
+    }
+
+    header {
+        background: #111;
+        color: #fff;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        color: #fff;
+        margin: 0 15px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav a:hover {
+        color: #f4b400;
+    }
+
+    .hero {
+        background: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70') no-repeat center/cover;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+    }
+
+    .hero h2 {
+        font-size: 40px;
+        background: rgba(0,0,0,0.6);
+        padding: 15px;
+    }
+
+    section {
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .card {
+        width: 300px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .card h3 {
+        margin: 10px 0;
+    }
+
+    .card p {
+        padding: 0 10px 15px;
+    }
+
+    .pricing table {
+        width: 80%;
+        margin: auto;
+        border-collapse: collapse;
+    }
+
+    .pricing th, .pricing td {
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+
+    .pricing th {
+        background: #111;
+        color: white;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .gallery img {
+        width: 250px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .contact form {
+        max-width: 400px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact input, .contact textarea {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .contact button {
+        background: #111;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    footer {
+        background: #111;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+    }
+ 
+     *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body{
+      background:#0b1120;
+      color:white;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:20px 8%;
+      /* background:#111827; */
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+
+    nav h1{
+      font-size:35px;
+      color:#facc15;
+      letter-spacing:2px;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+      gap:30px;
+    }
+
+    nav ul li a{
+      text-decoration:none;
+      color:white;
+      font-size:18px;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#facc15;
+    }
+
+    /* HERO SECTION */
+
+    .hero{
+      height:95vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      position:relative;
+    }
+
+    .hero::before{
+      content:'';
+      position:absolute;
+      width:100%;
+      height:100%;
+      background:rgba(243, 239, 239, 0.178);
+    }
+
+    .hero-content{
+      position:relative;
+      z-index:1;
+      max-width:700px;
+    }
+
+    .hero h2{
+      font-size:70px;
+      color:#facc15;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:22px;
+      line-height:1.7;
+      margin-bottom:35px;
+    }
+
+    .btn{
+      text-decoration:none;
+      background:#facc15;
+      color:black;
+      padding:15px 40px;
+      border-radius:8px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:white;
+    }
+
+    /* SECTION TITLE */
+
+    .section-title{
+      text-align:center;
+      font-size:45px;
+      margin:70px 0 40px;
+      color:#facc15;
+    }
+
+    /* CAR SECTION */
+
+    .cars{
+      padding:20px 8% 80px;
+    }
+
+    .car-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:35px;
+    }
+
+    .car-card{
+      background:#1e293b;
+      border-radius:18px;
+      overflow:hidden;
+      transition:0.4s;
+      box-shadow:0 8px 20px rgba(0,0,0,0.4);
+    }
+
+    .car-card:hover{
+      transform:translateY(-12px);
+    }
+
+    .car-card img{
+      width:100%;
+      height:240px;
+      object-fit:cover;
+    }
+
+    .car-info{
+      padding:25px;
+    }
+
+    .car-info h3{
+      font-size:30px;
+      margin-bottom:10px;
+      color:#facc15;
+    }
+
+    .car-info p{
+      line-height:1.7;
+      color:#d1d5db;
+      margin-bottom:20px;
+    }
+
+    .car-details{
+      margin-bottom:20px;
+    }
+
+    .car-details li{
+      margin-bottom:8px;
+      color:#e5e7eb;
+    }
+
+    .price{
+      font-size:28px;
+      font-weight:bold;
+      color:#22c55e;
+      margin-bottom:20px;
+    }
+
+    .buy-btn{
+      display:inline-block;
+      text-decoration:none;
+      background:#facc15;
+      color:black;
+      padding:12px 25px;
+      border-radius:8px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .buy-btn:hover{
+      background:white;
+    }
+
+    /* FEATURES SECTION */
+
+    .features{
+      padding:80px 8%;
+      background:#111827;
+    }
+
+    .feature-boxes{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .feature{
+      background:#1e293b;
+      padding:30px;
+      border-radius:15px;
+      text-align:center;
+      transition:0.3s;
+    }
+
+    .feature:hover{
+      transform:scale(1.05);
+    }
+
+    .feature h3{
+      color:#facc15;
+      margin-bottom:15px;
+      font-size:28px;
+    }
+
+    .feature p{
+      line-height:1.7;
+      color:#d1d5db;
+    }
+
+    /* CONTACT SECTION */
+
+    .contact{
+      padding:80px 8%;
+      text-align:center;
+    }
+
+    .contact h2{
+      font-size:42px;
+      color:#facc15;
+      margin-bottom:20px;
+    }
+
+    .contact p{
+      margin-bottom:30px;
+      color:#d1d5db;
+      font-size:18px;
+    }
+
+    form{
+      max-width:600px;
+      margin:auto;
+    }
+
+    input, textarea{
+      width:100%;
+      padding:15px;
+      margin-bottom:20px;
+      border:none;
+      border-radius:8px;
+      font-size:16px;
+    }
+
+    textarea{
+      height:140px;
+      resize:none;
+    }
+
+    button{
+      padding:15px 35px;
+      border:none;
+      background:#facc15;
+      color:black;
+      font-size:18px;
+      font-weight:bold;
+      border-radius:8px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    button:hover{
+      background:white;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#020617;
+      text-align:center;
+      padding:25px;
+      color:#9ca3af;
+    }
+
+   
+
+.service-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 38px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    transition: 0.4s ease;
+}
+
+.service-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    padding: 2px;
+    background: linear-gradient(
+        135deg,
+        #ff6b00,
+        #ffb347,
+        #ff6b00
+    );
+     -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.service-btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.service-btn:hover {
+    transform: translateY(-4px);
+    background: rgba(255, 107, 0, 0.15);
+    box-shadow: 0 15px 35px rgba(255, 107, 0, 0.35);
+}
+
+.service-btn:active {
+    transform: scale(0.97);
+}

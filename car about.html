@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Care - About Us</title>
+    <link rel="stylesheet" href="car about.css">
+</head>
+<body>
+   <nav>
+        <a href="q.html">Home</a>
+    </nav>
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Auto Care</h2>
+                <p>At Auto Care, we provide top-notch car maintenance and repair services. Our experienced team ensures your vehicle runs smoothly, safely, and efficiently. From routine servicing to emergency repairs, we are dedicated to keeping you on the road with confidence.</p>
+                <p>With state-of-the-art equipment and a commitment to customer satisfaction, Auto Care is your trusted partner for all your automotive needs.</p>
+                <a href="car service.html" class="btn">Explore Services</a>
+            </div>
+            <div class="about-image">
+                <img src="r2.webp" alt="Car Service">
+            </div>
+            
+        </div>
+    </section>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href=""/>
+
+<body>
+
+  <section class="about-section">
+    <div class="about-container">
+
+      <!-- Images -->
+      <div class="about-images">
+
+        <div class="main-img">
+          <img src="rep.webp" alt="Car Service">
+        </div>
+
+        <div class="small-img">
+          <img src="rep1.webp" alt="Mechanic">
+        </div>
+
+      </div>
+
+      <!-- Content -->
+      <div class="about-content">
+
+
+        <h2>Trusted Car Repair & Maintenance Services</h2>
+
+        <p>
+          At AutoCare, we provide professional vehicle repair, maintenance,
+          diagnostics, and detailing services with experienced technicians
+          and modern equipment. Our goal is to keep your vehicle safe,
+          efficient, and road-ready.
+        </p>
+
+        <p>
+          From engine diagnostics to oil changes and complete inspections,
+          we deliver reliable solutions for all types of vehicles with
+          quality service and affordable pricing.
+        </p>
+
+        <div class="features">
+
+          <div class="feature-box">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <div>
+              <h4>Expert Mechanics</h4>
+              <p>Certified technicians with years of experience.</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <i class="fa-solid fa-car-burst"></i>
+            <div>
+              <h4>Modern Equipment</h4>
+              <p>Advanced diagnostic and repair technology.</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <h4>Quick Service</h4>
+              <p>Fast turnaround time without compromising quality.</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+              <h4>Trusted Quality</h4>
+              <p>Reliable and affordable auto care solutions.</p>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </section>
+
+</body>
+</html>
+
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f4f6f9;
+    }
+
+    /* ABOUT SECTION */
+
+    .about{
+      width:100%;
+      padding:90px 10%;
+      background:#fff;
+    }
+
+    .about-container{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:60px;
+      flex-wrap:wrap;
+    }
+
+    /* IMAGE SIDE */
+
+    .about-images{
+      flex:1;
+      min-width:320px;
+      position:relative;
+    }
+
+    .img-box{
+      overflow:hidden;
+      border-radius:20px;
+      box-shadow:0 12px 30px rgba(0,0,0,0.15);
+    }
+
+    .img-box img{
+      width:100%;
+      display:block;
+      transition:0.5s;
+    }
+
+    .img-box:hover img{
+      transform:scale(1.05);
+    }
+
+    .floating-card{
+      position:absolute;
+      bottom:-35px;
+      right:-25px;
+      background:#e63946;
+      color:#fff;
+      padding:25px 30px;
+      border-radius:15px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.2);
+      text-align:center;
+    }
+
+    .floating-card h2{
+      font-size:40px;
+      margin-bottom:5px;
+    }
+
+    .floating-card p{
+      font-size:15px;
+    }
+
+    /* CONTENT SIDE */
+
+    .about-content{
+      flex:1;
+      min-width:320px;
+    }
+
+    .about-tag{
+      color:#e63946;
+      font-size:18px;
+      font-weight:bold;
+      text-transform:uppercase;
+      margin-bottom:15px;
+      letter-spacing:1px;
+    }
+
+    .about-content h1{
+      font-size:46px;
+      color:#1d3557;
+      margin-bottom:20px;
+      line-height:1.2;
+    }
+
+    .about-content p{
+      color:#555;
+      line-height:1.8;
+      margin-bottom:18px;
+      font-size:16px;
+    }
+
+    /* FEATURES */
+
+    .about-features{
+      margin-top:30px;
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:20px;
+    }
+
+    .feature{
+      display:flex;
+      gap:15px;
+      background:#f8f9fc;
+      padding:18px;
+      border-radius:12px;
+      transition:0.3s;
+    }
+
+    .feature:hover{
+      transform:translateY(-5px);
+      background:#eef3f7;
+    }
+
+    .feature i{
+      font-size:28px;
+      color:#e63946;
+      margin-top:5px;
+    }
+
+    .feature h4{
+      color:#1d3557;
+      margin-bottom:8px;
+    }
+
+    .feature p{
+      margin:0;
+      font-size:14px;
+      line-height:1.6;
+    }
+
+    /* BUTTONS */
+
+    .about-buttons{
+      margin-top:35px;
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      padding:14px 30px;
+      border-radius:50px;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn-primary{
+      background:#e63946;
+      color:#fff;
+    }
+
+    .btn-primary:hover{
+      background:#c1121f;
+    }
+
+    .btn-outline{
+      border:2px solid #1d3557;
+      color:#1d3557;
+    }
+
+    .btn-outline:hover{
+      background:#1d3557;
+      color:#fff;
+    }
+
+    /* STATS */
+
+    .stats{
+      margin-top:40px;
+      display:flex;
+      gap:40px;
+      flex-wrap:wrap;
+    }
+
+    .stat-box h2{
+      color:#e63946;
+      font-size:34px;
+    }
+
+    .stat-box p{
+      margin-top:5px;
+      color:#555;
+      font-size:15px;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+      .about-content h1{
+        font-size:34px;
+      }
+
+      .about-features{
+        grid-template-columns:1fr;
+      }
+
+      .floating-card{
+        right:0;
+        bottom:-25px;
+        padding:18px 22px;
+      }
+
+      .floating-card h2{
+        font-size:30px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <section class="about">
+
+    <div class="about-container">
+
+      <!-- LEFT IMAGE -->
+
+      <div class="about-images">
+
+        <div class="img-box">
+          <img src="auto.webp" alt="Car Service">
+        </div>
+
+        <div class="floating-card">
+          <h2>15+</h2>
+          <p>Years Experience</p>
+        </div>
+
+      </div>
+
+      <!-- RIGHT CONTENT -->
+
+      <div class="about-content">
+
+        <p>
+          AutoCare provides trusted automotive repair and maintenance
+          services for all vehicle brands. Our experienced mechanics
+          ensure quality workmanship, fast service, and customer satisfaction.
+        </p>
+
+        <p>
+          From oil changes and diagnostics to complete engine repair,
+          we use advanced tools and genuine parts to keep your vehicle
+          running smoothly and safely.
+        </p>
+
+        <!-- FEATURES -->
+
+        <div class="about-features">
+
+          <div class="feature">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <div>
+              <h4>Certified Mechanics</h4>
+              <p>Highly trained technicians for all car models.</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-car"></i>
+            <div>
+              <h4>Modern Garage</h4>
+              <p>Equipped with latest repair and diagnostic tools.</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+              <h4>Quality Guarantee</h4>
+              <p>Reliable service with genuine replacement parts.</p>
+            </div>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <h4>Quick Service</h4>
+              <p>Fast and efficient maintenance solutions.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- BUTTONS -->
+
+        <div class="about-buttons">
+
+          <a href="contact.html" class="btn btn-outline">Book Service</a>
+
+        </div>
+
+        <!-- STATS -->
+
+        <div class="stats">
+
+          <div class="stat-box">
+            <h2>5K+</h2>
+            <p>Happy Customers</p>
+          </div>
+
+          <div class="stat-box">
+            <h2>120+</h2>
+            <p>Expert Technicians</p>
+          </div>
+
+          <div class="stat-box">
+            <h2>24/7</h2>
+            <p>Customer Support</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Details Section</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f4f6f9;
+      padding:50px 8%;
+    }
+
+    /* SECTION TITLE */
+
+    .section-title{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .section-title h1{
+      font-size:42px;
+      color:#1d3557;
+      margin-bottom:10px;
+    }
+
+    .section-title p{
+      color:#666;
+      font-size:16px;
+    }
+
+    /* CAR CONTAINER */
+
+    .car-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:30px;
+    }
+
+    /* CAR CARD */
+
+    .car-card{
+      background:#fff;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 10px 25px rgba(0,0,0,0.12);
+      transition:0.4s;
+    }
+
+    .car-card:hover{
+      transform:translateY(-10px);
+    }
+
+    /* IMAGE */
+
+    .car-image{
+      height:240px;
+      overflow:hidden;
+    }
+
+    .car-image img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      transition:0.5s;
+    }
+
+    .car-card:hover .car-image img{
+      transform:scale(1.08);
+    }
+
+    /* CONTENT */
+
+    .car-content{
+      padding:25px;
+    }
+
+    .car-content h2{
+      color:#1d3557;
+      margin-bottom:10px;
+      font-size:28px;
+    }
+
+    .price{
+      color:#e63946;
+      font-size:24px;
+      font-weight:bold;
+      margin-bottom:15px;
+    }
+
+    .car-content p{
+      color:#666;
+      line-height:1.7;
+      margin-bottom:20px;
+      font-size:15px;
+    }
+
+    /* FEATURES */
+
+    .features{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:15px;
+      margin-bottom:25px;
+    }
+
+    .feature{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      background:#f8f9fc;
+      padding:12px;
+      border-radius:10px;
+    }
+
+    .feature i{
+      color:#e63946;
+      font-size:18px;
+    }
+
+    .feature span{
+      color:#333;
+      font-size:14px;
+    }
+
+    /* BUTTON */
+
+    .btn{
+      display:inline-block;
+      width:100%;
+      text-align:center;
+      padding:14px;
+      background:#e63946;
+      color:#fff;
+      text-decoration:none;
+      border-radius:50px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#c1121f;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+      .section-title h1{
+        font-size:32px;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- SECTION TITLE -->
+
+  <div class="section-title">
+    <h1>Featured Cars</h1>
+    <p>Explore our premium collection of luxury and sports cars</p>
+  </div>
+
+  <!-- CAR CARDS -->
+
+  <div class="car-container">
+
+    <!-- CAR 1 -->
+
+    <div class="car-card">
+
+      <div class="car-image">
+        <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1200&auto=format&fit=crop" alt="BMW Car">
+      </div>
+
+      <div class="car-content">
+
+        <h2>BMW M4</h2>
+
+        <div class="price">$85,000</div>
+
+        <p>
+          Experience luxury, speed, and advanced technology with the BMW M4.
+          Designed for performance lovers and premium comfort.
+        </p>
+
+        <div class="features">
+
+          <div class="feature">
+            <i class="fa-solid fa-gauge-high"></i>
+            <span>320 KM/H</span>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-gas-pump"></i>
+            <span>Petrol</span>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-car-side"></i>
+            <span>Automatic</span>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-user-group"></i>
+            <span>4 Seats</span>
+          </div>
+
+        </div>
+
+        <a href="premium cars.html" class="btn">View Details</a>
+
+      </div>
+
+    </div>
+
+    <!-- CAR 2 -->
+
+    <div class="car-card">
+
+      <div class="car-image">
+        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop" alt="Audi Car">
+      </div>
+
+      <div class="car-content">
+
+        <h2>Audi R8</h2>
+
+        <div class="price">$120,000</div>
+
+        <p>
+          The Audi R8 combines powerful engineering with an iconic sporty
+          design and unmatched driving experience.
+        </p>
+
+        <div class="features">
+
+          <div class="feature">
+            <i class="fa-solid fa-gauge-high"></i>
+            <span>330 KM/H</span>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-gas-pump"></i>
+            <span>Hybrid</span>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-car-side"></i>
+            <span>Automatic</span>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-user-group"></i>
+            <span>2 Seats</span>
+          </div>
+
+        </div>
+
+        <a href="premium cars.html" class="btn">View Details</a>
+
+      </div>
+
+    </div>
+
+    <!-- CAR 3 -->
+
+    <div class="car-card">
+
+      <div class="car-image">
+        <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?q=80&w=1200&auto=format&fit=crop" alt="Mercedes Car">
+      </div>
+
+      <div class="car-content">
+
+        <h2>Mercedes AMG</h2>
+
+        <div class="price">$98,000</div>
+
+        <p>
+          Discover elegance and superior performance with the Mercedes AMG,
+          built for luxury and ultimate comfort.
+        </p>
+
+        <div class="features">
+
+          <div class="feature">
+            <i class="fa-solid fa-gauge-high"></i>
+            <span>310 KM/H</span>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-gas-pump"></i>
+            <span>Diesel</span>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-car-side"></i>
+            <span>Automatic</span>
+          </div>
+
+          <div class="feature">
+            <i class="fa-solid fa-user-group"></i>
+            <span>5 Seats</span>
+          </div>
+
+        </div>
+
+        <a href="premium cars.html " class="btn">View Details</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
